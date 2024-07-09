@@ -1,0 +1,48 @@
+From:	dig-comments@list.nist.gov on behalf of Christoph Busch <christoph.busch@h-da.de>
+Sent:	Wednesday, February 1, 2023 10:30 AM
+To:	dig-comments@nist.gov
+Cc:	cb-hda; JLWayman@aol.com; Thieme, Michael; ????; Grother, Patrick J.
+Subject:	[dig-comments] references in NIST SP 800-63B-4
+
+Dear Sirs,
+
+I have noted that in the draft publication NIST SP 800-63B-4:
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.ipd.pdf
+several ISO-Standards are referenced. Thank you for that.
+
+However some references need an update:
+
+[ISO/IEC2382-37]  - the latest version is from 2022. See:
+https://www.iso.org/standard/73514.html
+
+[ISO/IEC24745] - the latest version is from 2022. See:
+https://www.iso.org/standard/75302.html
+
+[ISO/IEC30107-1] - the revision will complete in 2023. See:
+https://www.iso.org/standard/83828.html
+
+[ISO/IEC30107-3] - the latest version is from 2023. See:
+https://www.iso.org/standard/79520.html
+
+with best regards
+Christoph Busch
+-- 
+------------------------------------------------
+Prof. Dr. Christoph Busch
+Hochschule Darmstadt
+Fachbereich Informatik
+Schoefferstrasse 3
+D-64295 Darmstadt
+christoph.busch@h-da.de
+https://www.athene-center.de/
+http://dasec.h-da.de
+http://www.christoph-busch.de
+------------------------------------------------
+
+-- 
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov
+
+View this message at https://list.nist.gov/dig-comments
+--- 
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.

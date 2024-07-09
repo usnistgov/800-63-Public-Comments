@@ -1,0 +1,81 @@
+From:	dig-comments@list.nist.gov on behalf of Robert  Wagner <rwagner@tesla.net>
+Sent:	Thursday, February 2, 2023 6:16 AM
+To:	dig-comments@nist.gov
+Cc:	Joseph Fulmore
+Subject:	[dig-comments] 800-63b-4 Table 1 + phishing resistant clarification
+
+Dear NIST;
+Table 1 and the Authenticator Descriptions (e.g. section 5.1.4.1 Single-Factor OTP 
+Authenticators) need clarifications on whether or not the devices are considered 
+"phishing resistant". Forcing the reader to read section 5.2.5 in order to know 
+whether or not a particular device seems cumbersome. To alleviate this issue I 
+recommend:
+1.	Under each device that is not considered "phishing resistant" add a note: 
+"NOTE: This authenticator is not considered phishing resistant" e.g. page 
+24, after line 77.
+2.	Add a footnote to Table 1 and flag authenticators that are susceptible to 
+phishing.
+
+Requirement
+AAL1
+AAL2
+AAL3
+Permitted 
+authenticator type
+Memorized Secret1; 
+Look-up Secret1; Out-of-
+Band1; SF OTP Device1; 
+MF OTP Device2; SF 
+Crypto Software2; SF 
+Crypto Device2; MF 
+Crypto Software2; MF 
+Crypto Device2
+MF Out-ofBand2; MF OTP 
+Device2; MF Crypto 
+Software2; MF Crypto 
+Device2; or Memorized 
+Secret1 plus: Lookup 
+Secret1, Outof-Band, SF 
+OTP Device1, SF Crypto 
+Software1, SF Crypto 
+Device2
+MF Crypto Device2; SF 
+Crypto Device2 plus 
+Memorized Secret1; 
+SF OTP Device1 plus 
+MF Crypto Device2 or 
+Software; SF OTP 
+Device1 plus SF 
+Crypto Software1 plus 
+Memorized Secret1
+1 Not considered phishing resistant
+2 Phishing resistant
+
+Unfortunately, a casual look at Table 1 makes one believe they satisfy phishing 
+resistant requirements by combining authenticators such as memorized secrets 
+and SF OTP devices.  The Permitted Authenticator Types for AAL2/3 (section 4.2.1 
+and 4.3.2) also requires clarification. Should all of the authenticator types for 
+AAL3 be phishing resistant, or at least one of the approved types?
+
+3.	The document needs to clarify the 'something you have' device. This has 
+typically meant something under your control, something you carry with 
+you and perhaps store securely when not using it. I have heard mention 
+that because your workstation has cryptographic abilities, it is 'something 
+you have' and it would count towards MFA. However, one would only have 
+their workstation under their control for limited time while at work. 
+Anyone could log into their workstation after-hours. So, continuing to use 
+ID + password + workstation is not a MFA solution.
+Thanks in advance for any clarification you can provide!
+
+Robert Wagner, CISSP
+Security Engineer
+Dowless & Associates, A Tesla Company
+Herndon, VA 20171
+
+--  
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov 
+  
+View this message at https://list.nist.gov/dig-comments 
+---  
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.

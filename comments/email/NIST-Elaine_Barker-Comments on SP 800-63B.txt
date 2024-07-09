@@ -1,0 +1,74 @@
+From:	'Barker, Elaine B. (Fed)' via DIG-Comments <DIG-Comments@list.nist.gov>
+Sent:	Thursday, January 26, 2023 9:48 AM
+To:	dig-comments@list.nist.gov
+Subject:	[dig-comments] Comments on SP 800-63B
+Attachments:	EBB comments on SP 80-63B.docx
+
+
+My editorial comments (and some not so editorial0 are provided in the attachment. The more 
+substantive comments are provided below.
+
+Elaine
+
+1.   Line 526: Why use "SHOULD NOT" rather than "SHALL NOT"?
+2.    Lines 702-703: What is the point of even having a hint if the claimant is not yet authenticated and is 
+disallowed from seeing it? Reword?
+3.    Check with the CTG (Morrie?) that these are acceptable examples.
+4.    Lines 760-761: SP 800-107 will be withdrawn. Refer to the SHA-2 functions in FIPS 180 (but not 
+include SHA-1, which is in the process of being sunset). Also, consider whether SP 800-132 and SP 
+800-108 would be appropriate.
+5.    Line 775 and other references to SP 800-90A: The reference should be to the SP 800-90 series, 
+which consists of SP 800-90A, SP 800-90B, and SP 800-90C.
+6.    Lines 793-794: Throughout the document, there are discussions about random bit generators 
+(RBGs), security strength, and entropy. The discussions that mention entropy are particularly 
+troublesome. In most cases, it would be better to refer to the length of a value (the look-up secret in 
+this case) and refer to a new section that explains what is required. In this case, the look-up secret 
+needs to be a random value at least 20 bits (or 6 digits) long and include a reference to the new 
+section. This section would say that to get n random bits, a validated RBG (as specified in the SP 800-
+90 series and validated by the CMVP) that provides a security strength of at least X bits needs to be 
+used to generate the n bits, where X is provided in SP 800-131A (112 at present). Some comments 
+below explain how to use this new section.
+7.    Lines 804-805: This might require a very large list. This type of authenticator might be unusable for 
+some applications. This might be mentioned here.
+8.    Lines 806-810: Why use two different ways?
+9.    Line 813: Using a new section as described in comment 6 above, this could just say talk about the 
+look-up secret as being less that 64 bits in length.
+10.  Line 902: Does this mean that there would be no retries if incorrectly entered? Or do you mean only 
+one secret is sent by the verifier during a 10-minute period; once the secret is returned correctly 
+during that period, a replay of it cannot be accepted?
+11.  Lines 903-904: The verifier csn check that the random authentication secret is at least 20 bits long. 
+The verifier is probably not going to know how much entropy it has unless it has a way of knowing 
+how it was generated. Likewise, in line 905, the verifier can check if the secret is less than 64 bits in 
+length.
+12.  Line 975: 6 decimal digits is 20 bits in LENGTH. 
+13.  Line 1063: The verifier can only check the length of the secret (at least 64 bits long), not the amount 
+of entropy.
+14.  Line 1190: Be sure to define "direct connection" when first mentioned. I think there is an example 
+later in the document.
+15.  Line 1191: Make sure that an endpoint is defined in relation to an authenticator (perhaps provide a 
+figure).
+16.  Line 1529: The pairing code SHALL be at least 20 bits (6 digits) long and be randomly generated as 
+specified the new section discussed in comment 6 above.
+17.  Lines 1680-1681: Is the subscriber assumed to have two addresses?
+18.  Line 1710-1711: The binding code SHALL be at least 40 bits long (or at least 112 bits long)and 
+randomly generated (refer to the new section discussed in comment 6).
+19.  Lines 1839-1840: Secrets are at least 64 bits long and randomly generated as specified in [insert the 
+appropriate section number].
+20.  Section 9.4: This section is really hard to read and understand by readers not familiar with the 
+concepts, acronyms, laws and regulations (i.e., me). Is this understandable by the intended audience 
+of this section? This is not in plain language! Spell out the acronyms, expand the explanation, or 
+something.
+21.  Section 10.1: Users should be able to choose based on the type of memorized secret they need to 
+provide (e.g., it's hard to enter a password when having to switch between upper and lower cases, 
+numbers and special characters on a cell phone or tablet).
+22.  Line 2142: Most people don't know the difference between serif and non-serif. Provide a footnote?
+
+
+
+--  
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov 
+  
+View this message at https://list.nist.gov/dig-comments 
+---  
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.

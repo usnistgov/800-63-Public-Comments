@@ -1,0 +1,65 @@
+From:	Mike Hill <mhill@sensipass.com>
+Sent:	Friday, April 14, 2023 1:24 PM
+To:	dig-comments@nist.gov
+Subject:	[dig-comments] Re: NIST Publication 800-63-4 DRAFT Comments
+
+Re: NIST Publication 800-63-4 DRAFT Comments 
+ 
+Dear authors of the NIST Publication 800-63-4, 
+
+I would like to bring to your attention the benefits of using memorized secrets based on identifiable 
+interactions in the authentication process. Such an approach provides an extra layer of complexity and 
+security compared to traditional passwords, PINs or passphrases. By emphasizing the uniqueness and 
+self-recognition of these interactions, the memorized secrets become only recognizable by the 
+individual user, thereby adding to the strength of the security. We encourage you to consider these 
+points in your publication to enhance the security of authentication systems. 
+ 
+One of the positives of memorized secrets is that they can be only self-recognizable through identifiable 
+interactions that only pertain to that individual. 
+ 
+Memorized Secret: (proposed definition): 
+ 
+A type of authenticator comprised of a character string or other contextual input that is solely 
+identifiable or memorable by the subscriber, permitting the subscriber to demonstrate something that is 
+only significant to their knowledge as part of an authentication process.   
+ 
+Reasoning:  
+ 
+Memorized secrets consisting of interactions can provide much more complexity than typical passwords, 
+PINs or passphrases.  This, in turn, can maintain the identity assurance of the memorized secret through 
+user involvement without the vulnerabilities and address the availability of emerging human-machine 
+input devices to register and provide the interaction where keyboards are unavailable and provide a 
+method of inputting a memorized secret for users with physiological limitations. 
+ 
+Very respectfully,
+-- 
+Michael Hill 
+Founder & CEO
+------------------------------------------------------------------ 
+USA: +1 (202) 412-0821 
+IRL: +353 85 8334477
+https://calendly.com/sensipass
+www.SensiPass.com 
+@sensipass 
+ 
+Authenticating people, not just credentials. 
+ 
+This transmission is issued by SensiPass Inc. and/or SensiPass Ltd. This email and the information it 
+contains may be legally privileged and/or confidential. It is for the intended recipient only. If an 
+addressing or transmission error has misdirected this email, please notify the author by replying to this 
+email. If you are not the intended recipient, you may not use, disseminate, alter, print or copy any 
+information in or transmitted with this message or deliver to anyone. SensiPass is incorporated and 
+registered in the United States and Ireland. 
+
+Registered offices:  
+3101 Wilson Boulevard, Suite 240, Arlington, VA, 22201, USA 
+Guinness Enterprise Centre, Taylor's Lane, Dublin D08 YE0P, Ireland.   
+©2023 SensiPass. All rights reserved.
+ 
+--  
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov 
+  
+View this message at https://list.nist.gov/dig-comments 
+---  
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.

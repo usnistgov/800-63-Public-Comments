@@ -1,0 +1,33 @@
+From:	'Barker, Elaine B. (Fed)' via DIG-Comments <DIG-Comments@list.nist.gov>
+Sent:	Tuesday, February 21, 2023 6:08 AM
+To:	dig-comments@list.nist.gov
+Subject:	[dig-comments] Comment on 800-63B
+
+We received comments on one of our documents that also included a comment on 63B (see below). I’m 
+passing it along just in case you didn’t see it.
+
+Elaine
+
+From: Kampanakis, Panos <kpanos@amazon.com> 
+Date: Monday, February 20, 2023 at 11:08 PM 
+To: cryptopubreviewboard <cryptopubreviewboard@nist.gov> 
+Cc: Crockett, Eric <ericcro@amazon.com>, Arciszewski, Scott <scottarc@amazon.com> 
+Subject: Comments on SP 800-132
+…
+ 
+Additionally, SP800-63B is the NIST SP that addresses password hashing. We suggest that SP800-63B’s 
+section 5.1.1.2 should reference SP 800-132 and not include Balloon hashing. As far as we know, Balloon 
+was never standardized, and there's very little academic research on it.  
+ 
+… 
+Regards,  
+Scott Arciszewski, Eric Crocket, Panos Kampanakis
+AWS 
+ 
+--  
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov 
+  
+View this message at https://list.nist.gov/dig-comments 
+---  
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.

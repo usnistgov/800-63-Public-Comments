@@ -1,0 +1,44 @@
+From:	'Josh Grossman' via DIG-Comments <DIG-Comments@list.nist.gov>
+Sent:	Tuesday, March 14, 2023 7:59 AM
+To:	dig-comments@nist.gov
+Subject:	[dig-comments] Re: 800-63-4/sp800-63b
+
+Sorry I meant 5.1.1.2.
+
+Also https://pages.nist.gov/800-63-4/sp800-63b.html#complexity doesn't seem to mention repeated 
+characters which confuses things even more.
+
+On Tue, 14 Mar 2023 at 16:35, Josh Grossman <josh.grossman@owasp.org> wrote:
+800-63-4/sp800-63b says in 5.1.1.1 "For example, the list MAY include, but is not limited to:... 
+Repetitive or sequential characters (e.g. ‘aaaaaa’, ‘1234abcd’)." but then a few lines later says " 
+Verifiers SHALL NOT impose other composition rules (e.g., ...prohibiting consecutively repeated 
+characters) for memorized secrets  "
+
+To me this seems like contradictory advice.
+
+Thanks,
+ 
+
+
+-- 
+
+Josh Grossman
+OWASP Israel board member
+OWASP ASVS co-leader
+@JoshCGrossman
+ 
+
+
+-- 
+
+Josh Grossman
+OWASP Israel board member
+OWASP ASVS co-leader
+@JoshCGrossman
+--  
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov 
+  
+View this message at https://list.nist.gov/dig-comments 
+---  
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.

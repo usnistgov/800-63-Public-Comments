@@ -1,0 +1,37 @@
+# Site settings
+title: SP 800-63 Digital Identity Guidelines - Public Comments
+description: "NIST Special Publication 800-63 Digital Identity Guidelines - Public Comments"
+baseurl: "/800-63-Public-Comments" # the subpath of your site, e.g. /blog
+url: "https://pages.nist.gov/" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+exclude:
+- ".ruby-version"
+- ".jekyll-metadata"
+- ".gitignore"
+- Gemfile
+- Gemfile.lock
+- Makefile
+- vendor
+- README.md
+- CONTRIBUTING.md
+- LICENSE.md
+- BUILD.md
+- "*.yml"
+- "*/images/*.pdf"
+
+# GitHub information
+org_name: usnistgov
+repo_name: 800-63-4
+
+
+host: 0.0.0.0
+
+collections:
+
+relative_links:
+  enabled:     true
+  collections: true
+

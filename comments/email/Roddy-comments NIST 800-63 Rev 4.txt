@@ -1,0 +1,96 @@
+From:	dig-comments@list.nist.gov on behalf of Shannon Roddy <sroddy@gmail.com>
+Sent:	Friday, April 14, 2023 8:26 PM
+To:	dig-comments@nist.gov
+Subject:	[dig-comments] NIST 800-63 Rev 4 open comment period
+
+RE:  NIST 800-63 Draft Revision 4 open comment period
+
+I’m writing in response to the open comment period for the Draft Revision 4 of the NIST 800-63 
+standards.  My attention is largely on the 800-63C section of the draft, as it has been the area of 
+need that I have been focused on in the recent past and is an area in which I have 15 years 
+experience.. 
+ 
+In the last two years specifically, I have had discussions and interactions with a diverse set of 
+sectors and organizations, both national and international in scope.  These sectors range from 
+those who already presently operate global-scale (inter)federations that have been in production 
+in some cases for nearly two decades, to those that do not even have well implemented Single 
+Sign-On in their production environments and are starting out with green fields.  Some of these 
+sectors see accelerated adoption of federation practices as critical to the success of their 
+present-day missions.   
+ 
+My background is primarily in the area of successful Research and Education (R&E) style SAML 
+federation at global scale, and my perspectives largely come from that experience.  I’m most 
+familiar with the tools, practices, and methods that have been developed in that space, however 
+I also have experience with other commercially produced offerings, their customers, and the 
+varying degrees of support of open federation standards of those toolsets.  I believe that many 
+of the patterns, practices, and standards that are in use in R&E multilateral federations can also 
+largely be applied outside of the R&E space.  The finer details and requirements may be 
+different, but the patterns and practices translate over equally well in many cases.
+
+At a high level, I believe there are a couple of areas that 800-63C does not address 
+comprehensively.  These areas are of immediate concern to some of the organizations I have 
+been working with over the last two years, especially in the federal space.  Some of these 
+organizations are mandated to follow the FICAM Playbooks & guidance, which references 800-
+63 as a supporting standard.  Because 800-63 does not directly address some of these areas of 
+immediate concern, it becomes an exercise for the implementer how best to fill the gap.  Two of 
+these areas are:
+
+1.	Operating a federation at scale and scaling methods in use in other federations
+2.	Practices for interoperability with other existing (inter)national scale federations 
+
+One organization I have been in discussions with had more than 9,000 unique entities that 
+would need to participate in their proposed federation.  If one assumes a “full-mesh bilateral 
+style” federation, that becomes 81 million unique entity relationships under management.  This 
+organization is only one division of their larger overall organization that is US/national in 
+scope.  This single organization and their 9,000 entities is already at the scale at which global 
+R&E federations operate at (8,881 multilateral entities presently in eduGAIN, and 6,160 entities 
+in InCommon).  When taking into account the sibling organizations in the overall federation, the 
+complexity grows by at least an order of magnitude.  There are various approaches to these 
+types of scaling issues that are already in production in other federations, though I believe these 
+are largely not addressed in the current draft revision.  This federal organization is facing 
+immediate scaling issues, while lacking guidance on how best to scale.
+
+Another organization I have worked with has an immediate need to federate with international 
+partners.  This organization is also mandated to follow the FICAM Playbook, and its supporting 
+800-63 standards.  In order to interoperate with their international partners (who are not 
+mandated to follow the NIST standards) they will need to develop interoperability standards and 
+practices.  In many ways, this immediately at first glance appears like the eduGAIN global 
+interfederation from the very outset of the implementation.  This proposed federation would 
+initially be composed of multiple nationally-scoped federations, with their own mandates and 
+governing bodies, and they must interoperate.  Again, in this case, I believe the guidance they 
+have available is incomplete.  It also becomes problematic when the NIST standards are in 
+conflict with the other federation standards in the target national federations.
+
+One area of long standing concern is in the area of interoperability when an organization must 
+operate in multiple federations due to its mission, and there is a wide divergence between the 
+operating practices between these federations.  For instance, a federal agency which must also 
+interact with research grant recipients.  The federal agency may be mandated to follow FISMA & 
+800-63, and participate in a federally scoped federation, but the researcher exists in an R&E 
+federation.  While 800-63 is primarily written and targeted toward federal use cases, the existing 
+needs are often not that clearly divided.  NIH will need to federate with researchers and their 
+R&E institutions.  NASA will need to federate with commercial launch companies.  The 
+Department of Energy will need to federate with national labs.  Boeing will need to federate with 
+the Department of Defense.  The Department of Education will need to federate with R&E 
+institutions and K-12.  
+ 
+While 800-63 is written with the intention of being scoped only to US Federal use cases, and 
+can be more tightly constrained to those proposed use cases, I suspect the reality will not be so 
+clearly delineated.  As federation efforts potentially gain traction within the federal space, 
+interoperability will become a significant hurdle if efforts and standards bifurcate.  I suspect that 
+the multiple sectors I have spoken to with nascent federation efforts, commercial software 
+providers, NIST, and the existing production federations and standards bodies will ultimately 
+need to work together to harmonize our practices across sectors in the future.  In many ways, I 
+see the future of federation efforts to be as core and fundamental as TCP/IP three decades 
+ago.  We currently have an ecosystem where there are gaps in support for existing federation 
+standards and practices across the various sectors and implementations.  I believe we should 
+work to close these gaps, and 800-63 is, ideally, one supporting tool in closing those gaps. 
+ 
+I look forward to the continued evolution of the NIST standards and I appreciate the opportunity 
+to provide comments and perspectives.  
+--  
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov 
+  
+View this message at https://list.nist.gov/dig-comments 
+---  
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.

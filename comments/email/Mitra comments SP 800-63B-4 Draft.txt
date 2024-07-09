@@ -1,0 +1,36 @@
+From:	dig-comments@list.nist.gov on behalf of ADITYA MITRA 20BCR7009 
+<aditya.20bcr7009@vitap.ac.in>
+Sent:	Thursday, March 9, 2023 6:14 PM
+To:	dig-comments@nist.gov
+Subject:	[dig-comments] Concern over Cryptographic Software Authenticator in SP 800-63B-4 
+Draft
+
+Sir,
+The SP 800-63B-3 stated, "Multi-factor cryptographic software authenticators SHOULD discourage and 
+SHALL NOT facilitate the cloning of the secret key onto multiple devices." However, this clause has been 
+clearly removed in the SP 800-63B-4 draft, which raises concerns about the exporting and cloning of 
+cryptographic secrets. Connected authenticators, on the other hand, are allowed to export the 
+cryptographic keys over a wired connection or through an authenticated wireless channel. There has, 
+however, been no mention of how the exported secrets are to be processed on the endpoint. It is quite 
+possible that the secrets may be compromised post-export. I feel cryptographic software SHOULD NOT 
+facilitate the export and cloning of secrets onto other devices. On the other hand, the cryptographic 
+computations SHOULD be done on the cryptographic software itself. For Connected Authenticators, only 
+the challenge and response and other one-time secrets should only be shared over wired or secure 
+channels. 
+I would suggest, the statement "External cryptographic authenticators that do not meet the 
+requirements of cryptographic hardware authenticators (e.g., that have a mechanism to allow private 
+keys to be exported) are also considered to be cryptographic software authenticators" be removed, and 
+all types of cryptographic authenticators, both software, hardware, multi-factor, single-factor, SHOULD 
+NOT facilitate the export and cloning of private keys.
+
+Aditya Mitra
+Cybersecurity Researcher,
+AIR Center
+VIT-AP University
+--  
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov 
+  
+View this message at https://list.nist.gov/dig-comments 
+---  
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.

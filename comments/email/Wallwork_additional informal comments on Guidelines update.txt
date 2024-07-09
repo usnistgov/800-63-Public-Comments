@@ -1,0 +1,56 @@
+From:	Anne.Wallwork via DIG-Comments <DIG-Comments@list.nist.gov>
+Sent:	Friday, April 21, 2023 1:30 PM
+To:	connie.lasalle@nist.gov
+Cc:	dig-comments@nist.gov
+Subject:	[dig-comments] additional informal comments on Guidelines update
+
+A few post-4/14 deadline thoughts:
+
+Base—add definition of federation protocol?  A protocol is an established set of rules that 
+determine how data is transmitted between different devices in the same network. Essentially, it 
+allows connected devices to communicate with each other, regardless of any differences in their 
+internal processes, structure or design. A federation protocol is a process that allows for the 
+conveyance of assertions, authentication attributes, and subscriber attributes across networked 
+systems.
+
+Base consider expanding definition of assertion:
+“Assertion A statement from a verifier to an RP that contains information about a subscriber.
+Assertions may also contain verified attributes that further characterize the subscriber and 
+support authorization decisions at the RP.. An assertion includes a federated identifier for 
+the subscriber that associates the subscriber with their interactions with the RP over 
+multiple authenticated sessions. 
+
+Base 5.3. Tailor and Document Assurance Levels 1375-1376 Clarify that tailoring is an ongoing 
+(vs. periodic) process—“Tailoring provides an ongoing process to modify an initially assessed 
+assurance level or implement compensating controls based on ongoing detailed impact and risk 
+assessments.”  (Cf. 5.4. “Continuously Evaluate and Improve Threat actors adapt, user 
+expectations and needs shift, and missions evolve. As such, risk Risk assessments and identity 
+solutions are not to be set and forgotten. To maintain pace with the constantly shifting 
+environment in which they operate, organizations SHOULD implement a continuous evaluation 
+and improvement program that leverages input from people interacting with the identity system. 
+These programs SHOULD consider feedback from application performance metrics, threat 
+intelligence, fraud analytics, assessments of equity impacts, privacy impact analysis, and user 
+inputs.”)
+
+Base add definition of single sign-on  Single sign-on refers to the ability of federation 
+processes to enable the subscriber to obtain services from multiple RPs without the need to 
+hold or maintain separate authenticators at each RP.
+
+
+
+Anne Shere Wallwork
+Senior Counselor for Strategic Policy and Innovation
+Office of Terrorist Financing and Financial Crimes (TFFC)
+U.S. Department of the Treasury
+1500 Pennsylvania Avenue NW
+Washington DC 20220
+Mobile: +1 (202) 577-4079 
+E-mail: anne.wallwork@treasury.gov 
+
+--  
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov 
+  
+View this message at https://list.nist.gov/dig-comments 
+---  
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.

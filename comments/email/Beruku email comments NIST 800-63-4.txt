@@ -1,0 +1,57 @@
+From:	dig-comments@list.nist.gov on behalf of Julian White <julian.white@beruku.com>
+Sent:	Saturday, April 15, 2023 12:34 AM
+To:	dig-comments@nist.gov
+Cc:	Alastair Treharne
+Subject:	[dig-comments] NIST 800-63-4 feedback
+Attachments:	sp800-63-4-suite-ipd-comment-template.xlsx
+
+Follow Up Flag:	Follow up
+Flag Status:	Completed
+
+
+Please find attached our feedback on the latest draft of NIST 800-63 Digital Identity guidelines.
+
+We've provide line-by-line comments in the sheet as requested however we also have the following 
+general feedback:
+
+*	One of the stated objectives of the update is to broaden the demographic coverage and provide 
+different routes to allow people to get a digital identity. However we're not sure that this is 
+reflected sufficiently in the guide as is, the core IAL definitions haven't really changed and whilst 
+some other clarifications have been added or updated around referees etc we're not sure that 
+the changes made so far will dramatically improve the coverage.
+*	The guidance doesn't reflect some of the current services and technology that is available, in 
+particular using fraud services to manage risk and thereby allow users to use less than ideal 
+sources of evidence or KBV etc as fraud checks seem to be optional (which means they won't 
+happen in real life) and if a CSP implements them it doesn't give them any benefit in terms of 
+reaching the IAL.
+*	There aren't any controls about how KBV should work, which is probably needed since lots of 
+services ask poor questions that leave them open to impostors and account takeover
+*	There isn't clear performance criteria when using biometric technologies. There is a wide range 
+of products on the market that have significant performance differences and if you aren't clear 
+that will create an unlevel playing field for the CSPs.
+As you mentioned in the document, Alastair and myself contributed and collaborated on the previous 
+version of 800-63 with you, and, as previously, if you would like us to give you direct help and support 
+again please feel free to contact us at any time.
+
+We have also recently revised the UK guidance to make it more flexible 
+(https://www.gov.uk/government/publications/identity-proofing-and-verification-of-an-individual) as 
+well as produced guidance how to use a referee for identity checks 
+(https://www.gov.uk/government/publications/how-to-accept-a-vouch-as-evidence-of-someones-
+identity), which you might find useful. Similarly if you would like us to talk you through how we 
+developed that, how we introduced the flexibility or how it works in general we would gladly do so.
+
+Kind regards,
+
+Julian White
+Beruku 
+
+Tel: +44 (0) 7973 658957
+email: julian.white@beruku.com
+
+--  
+To unsubscribe from this group, send email to dig-comments+unsubscribe@list.nist.gov 
+  
+View this message at https://list.nist.gov/dig-comments 
+---  
+To unsubscribe from this group and stop receiving emails from it, send an email to DIG-
+Comments+unsubscribe@list.nist.gov.
