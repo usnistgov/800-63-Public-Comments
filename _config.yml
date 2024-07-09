@@ -24,7 +24,7 @@ exclude:
 
 # GitHub information
 org_name: usnistgov
-repo_name: 800-63-4
+repo_name: 800-63-Public-Comments
 
 
 host: 0.0.0.0
