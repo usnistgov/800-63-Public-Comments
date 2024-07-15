@@ -70,7 +70,7 @@ The following list of Public Comments received for [Special Publication (SP) 800
 - FPKIMA [(template submission)](comments/spreadsheet/fpkima-sp800-63-4-ipd.pdf)
 - General Services Administration [(template submission)](comments/spreadsheet/General Services Adminstration SP_800-63_Comments.pdf)
 - Google [(template submission)](comments/spreadsheet/Google-sp800-63-4-ipd.pdf)
-- Greg Fimura (NIST) [(template submission)](comments/spreadsheet/NIST-Fiumara-sp800-63-4-ipd.pdf)
+- Greg Fiumara (NIST) [(template submission)](comments/spreadsheet/NIST-Fiumara-sp800-63-4-ipd.pdf)
 - Health and Human Services [(template submission)](comments/spreadsheet/HHS_032323-sp800-63-4-ipd.pdf)
 - ID.me [(cover letter)](comments/pdf/IDme-cover-letter-sp800-63-4-ipd.pdf) [(template submission)](comments/spreadsheet/IDme-comment_template-sp800-63-4-ipd.pdf)
 - Idemia [(template submission)](comments/spreadsheet/Idemia-SP800-63-4-ipd.pdf)
