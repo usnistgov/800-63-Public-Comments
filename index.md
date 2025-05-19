@@ -9,7 +9,7 @@ description: "NIST Special Publication 800-63 Digital Identity Guidelines Public
 ## NIST Special Publication 800-63: Digital Identity Guidelines
 ## Public Comments
 
-#### July 14, 2024
+#### May 19, 2025
 <br>
 </div>
 </section>
