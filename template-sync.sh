@@ -41,16 +41,10 @@ Paths:
   GIT_SYNC_UTILS       Folder path containing utility files.
 
 These variables have default values defined in the script. The defaults can be
-overridden by environment variables. Any environment variables are overridden
-by values set in a '.env' file (if it exists), and in turn by those set in a
-file specified by the '--config-file' option."
+overridden by environment variables, which are in turn overridden by values
+set in a file specified by the '--config-file' option."
 
 parse_args() {
-	# Set args from a local environment file.
-	if [ -e ".env" ]; then
-		source .env
-	fi
-
 	# Set args from file specified on the command-line.
 	if [[ $1 = "-c" || $1 = "--config-file" ]]; then
 		source "$2"
@@ -119,22 +113,22 @@ main() {
 initialize_sync_directory() {
 	if [ -d "$sync_directory" ]; then
 		echo "Removing old sync directory $sync_directory ..."
-		rm -rfv $sync_directory
+		rm -rfv -- "$sync_directory"
 	fi
-	git clone -o $sync_remote $repo $sync_directory
+	git clone -o "$sync_remote" -- "$repo" "$sync_directory"
 }
 
 update_sync_directory() {
-	git -C $sync_directory checkout $branch
-	git -C $sync_directory pull $sync_remote $branch
+	git -C "$sync_directory" checkout "$sync_branch"
+	git -C "$sync_directory" pull "$sync_remote" "$sync_branch"
 }
 
 compare_templates() {
-    compare_sync_directory $sync_templates
+    compare_sync_directory "$sync_templates"
 }
 
 compare_utils() {
-	compare_sync_directory $sync_utils
+	compare_sync_directory "$sync_utils"
 }
 
 compare_sync_directory() {
@@ -143,21 +137,22 @@ compare_sync_directory() {
 		return 1
 	fi
 	diffs=()
-	for f in $sync_directory/$1/*
+	for f in "$sync_directory/$1"/*
 	do
-		echo "Comparing `basename $f` ..."
-		if [ -d $sync_root/`basename $f` ]; then
+		name=$(basename -- "$f")
+		echo "Comparing $name ..."
+		if [ -d "$sync_root/$name" ]; then
 			trail='/'
 		else
 			trail=''
 		fi
 		if [[ $verbose ]]; then
-			diff -Naur $f$trail $sync_root/`basename $f`$trail
+			diff -Naur -- "$f$trail" "$sync_root/$name$trail"
 		else
-			diff -Naqr $f$trail $sync_root/`basename $f`$trail
+			diff -Naqr -- "$f$trail" "$sync_root/$name$trail"
 		fi
 		if [[ $? -ne 0 ]]; then
-			diffs+=`basename $f`
+			diffs+=("$name")
 		fi
 	done
 
@@ -172,30 +167,32 @@ compare_sync_directory() {
 }
 
 update_from_sync_directory() {
-	for f in $sync_directory/$sync_templates/*
+	for f in "$sync_directory/$sync_templates"/*
 	do
-		echo "Synchronizing `basename $f` ..."
+		name=$(basename -- "$f")
+		echo "Synchronizing $name ..."
 		if [[ $verbose ]]; then
-			rsync -rcv --delete --exclude .git $f/ $sync_root/`basename $f`/
+			rsync -rcv --delete --exclude .git -- "$f/" "$sync_root/$name/"
 		else
-			rsync -rc --delete --exclude .git $f/ $sync_root/`basename $f`/
+			rsync -rc --delete --exclude .git -- "$f/" "$sync_root/$name/"
 		fi
 	done
-	compare_sync_directory
+	compare_templates
 }
 
 update_to_sync_directory() {
-	for f in $sync_directory/$sync_templates/*
+	for f in "$sync_directory/$sync_templates"/*
 	do
-		echo "Synchronizing `basename $f` ..."
+		name=$(basename -- "$f")
+		echo "Synchronizing $name ..."
 		if [[ $verbose ]]; then
-			rsync -rcv --delete --exclude .git $sync_root/`basename $f`/ $f/ 
+			rsync -rcv --delete --exclude .git -- "$sync_root/$name/" "$f/"
 		else
-			rsync -rc --delete --exclude .git $sync_root/`basename $f`/ $f/
+			rsync -rc --delete --exclude .git -- "$sync_root/$name/" "$f/"
 		fi
-		git -C $sync_directory status
+		git -C "$sync_directory" status
 	done
-	compare_sync_directory
+	compare_templates
 }
 
 [[ $1 = --source-only ]] || main "$@"

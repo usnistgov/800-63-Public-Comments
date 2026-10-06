@@ -9,3 +9,4 @@ _pdf/
 .DS_Store
 _published/
 _template_workspace
+.env
